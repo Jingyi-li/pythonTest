@@ -3,10 +3,10 @@ for filename_argv in sys.argv:
     def txt2csv(filename_tp):
 
         import numpy as np
-        import matplotlib.pyplot as plt
+        # import matplotlib.pyplot as plt
         import csv
-        # filename = filename_tp + '.txt'
-        filename = filename_tp
+        filename = filename_tp + '.txt'
+        # filename = filename_tp
         rawData = np.loadtxt(filename, dtype=np.str)
 
         Lable = ['accx', 'accy', 'accz', 'grox', 'groy', 'groz', 'magx', 'magy', 'magz', 'count']
@@ -46,8 +46,8 @@ for filename_argv in sys.argv:
         return
 
 
-    # print('This is an exe convert the .txt file to .csv file\n ')
-    # filename_tp = input('please type the file name:')
+    print('This is an exe convert the .txt file to .csv file\n ')
+    filename_tp = input('please type the file name:')
     filename_tp = filename_argv
     txt2csv(filename_tp)
 

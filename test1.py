@@ -1,7 +1,7 @@
 def txt2csv(filename_tp):
 
     import numpy as np
-    import matplotlib.pyplot as plt
+    # import matplotlib.pyplot as plt
     import csv
     filename = filename_tp+'.txt'
     rawData = np.loadtxt(filename, dtype=np.str)
