@@ -83,7 +83,7 @@ DATABASES = {
         'NAME': 'PracDjango',
         'USER': 'root',
         'PASSWORD': 'Mba287xd!',
-        'HOST': '127.0.01',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
     }
 }
